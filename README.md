@@ -3,8 +3,18 @@
 </p>
 
 # Teslo API
+1. Clonar proyecto
+2. Ejecutar la instruccion para descargar todod los modulos de node
+```
+yarn install
+```
+3. Clonar el archivo ```.env.template``` y renombrarlo ```.env```
+4. Cambiar las variables de entorno
 
-1.Levantar la base de datos
+
+5. Levantar la base de datos
 ```
 docker-compose up -d
 ```
+
+6. Levantar el modo desarrollo ```yarn start:dev```
