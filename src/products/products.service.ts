@@ -31,7 +31,7 @@ export class ProductsService {
         images: images.map(image =>this.productImagesRepository.create({url:image})) 
       });
       await this.productRepository.save(product);
-      return product;
+      return {...product,images};
 
     } catch (error) {
       this.handleDBExceptions(error);
